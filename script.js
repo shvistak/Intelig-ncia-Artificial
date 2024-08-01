@@ -47,8 +47,15 @@ const perguntas = [
     {
         enunciado: "Ao final da discussão, Gabriel precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
         alternativas:[
-            "Criar uma imagem utilizando um gerador de imagem de IA.", 
-            "Criar uma imagem utilizando uma plataforma de design como o Paint."],
+            {
+            texto: "Criar uma imagem utilizando um gerador de imagem de IA.", 
+            afirmação: "Afirmação 1"
+            }
+            {
+            texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+            afirmação:"Afirmação 2"    
+            }
+        ],
     },
 ];
 let atual = 0;
@@ -56,25 +63,35 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta(){
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas [atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 function mostraAlternativas(){
     for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click",() =>
-            respostaSelecionada(alternativa));
-            function respostaSelecionada(opçãoSelecionada){
-                const afirmacoes = opçãoSelecionada.afirmação;
-                historiaFinal = afirmacoes;
+        botaoAlternativas.addEventListener("click", () =>
+            respostaSelecionada(alternativa)); 
+            function respostaSelecionada (opcaoSelecionada){
+                const afirmacoes = opcaoSelecionada.afirmação;
+                historiaFinal += afirmacoes + "";
                 atual++;
                 mostraPergunta();
             }
         );
         caixaAlternativas.appendChild(botaoAlternativas);
         }
+}
+function mostraResultado (){
+    caixaPerguntas.textContent = "Em 2049 ...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 }
 mostraPergunta();
 
