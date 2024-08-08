@@ -1,3 +1,5 @@
+import { aleatorio } from "./aleatorio.js";
+import { perguntas } from "./perguntas.js";
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -97,7 +99,7 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-const afirmacoes = opcaoSelecionada.afirmacao;
+const afirmacoes = aleatorio (opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
@@ -108,4 +110,8 @@ function mostraResultado() {
     caixaAlternativas.textContent = "";
 }
 
+function aleatorio (lista){
+    const posicao = Math.floor(Math.random()*lista.lenght);
+    return lista [posicao];
+}
 mostraPergunta();
