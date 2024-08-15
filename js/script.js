@@ -3,9 +3,9 @@ import { perguntas } from "./perguntas.js";
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
+const caixaResultado = document.querySelector(".caixa-resultados");
 const textoResultado = document.querySelector(".texto-resultado");
-
+const botaoJogarNovamente = document.querySelector(".novamente-btn");
 const perguntas = [
     {
         enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
@@ -105,13 +105,21 @@ const afirmacoes = aleatorio (opcaoSelecionada.afirmacao);
     mostraPergunta();
 }
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Em 2049, ${nome}";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
+    caixaResultado.classList.add ("mostrar");
+    botaoJogarNovamente.addEventListener ("click",jogaNovamente);
 }
 
 function aleatorio (lista){
     const posicao = Math.floor(Math.random()*lista.lenght);
     return lista [posicao];
+}
+function jogaNovamente () {
+    atual = 0;
+    historiaFinal = "";
+    caixaResultado.classList.remove("mostrar");
+    mostraPergunta ();
 }
 mostraPergunta();
