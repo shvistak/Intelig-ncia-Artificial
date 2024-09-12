@@ -1,49 +1,49 @@
 export const perguntas = [
     {
-        enunciado: "As orientações, visando a segurança e a saúde da população dos impactos da fumaça, evitando riscos de infecções respiratórias agudas, especialmente em crianças e idosos. Qual o seu pensamento sobre isso?",
+        enunciado: "Você recebeu orientações, visando a segurança e a saúde da população dos impactos da fumaça, evitando riscos de infecções respiratórias agudas. Qual o seu pensamento sobre isso?",
         alternativas: [
             {
                 texto: "Isso é preocupante!",
                 afirmacao: [
-                    "No início ficou com medo e não sabia quais medidas tomar. "
+                    "No início você ficou com medo e não sabia quais medidas tomar. "
                 ],
                 proxima: 1,
                 },
             {
                 texto: "Isso é válido!",
                 afirmacao: [
-                    "Quis saber como se proteger."
+                    "Você quis saber como se proteger."
                 ],
                 proxima: 2,
                 }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Em caso de reação alérgica nos olhos ou narinas, a orientação é evitar contato com as áreas afetadas. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Você não deve coçar olhos e nariz, além de manter a distância das fumaças.",
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis."
+                    "É uma opção para se proteger."
                 ],
                 proxima: 3,
                 },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "A situação pode ser amenizada com lavagem nas regiões com soro fisiológico.",
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                    "Você deve ficar alerta a sintomas."
                 ],
                 proxima: 4,
                 }
         ]
     },
     {
-        enunciado: "Depois que você escreveu o trabalho, teve uma discussão sobre o impacto da IA no trabalho do futuro. O que você faz?",
+        enunciado: "Recomenda-se que você se proteja, principalmente nos dias em que o ar está mais afetado pela fumaça, evitando estar em ambientes externos, visando prevenir infecções respiratórias. O que você faz?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Evito exposição ao realizar atividades físicas em áreas externas.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                    "Você poderia optar em usar máscara de proteção respiratória quando houver circulação em ambientes com fumaça."
                 ],
                 proxima: 5,
                 },
