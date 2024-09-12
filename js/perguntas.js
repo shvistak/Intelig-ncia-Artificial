@@ -48,9 +48,9 @@ export const perguntas = [
                 proxima: 5,
                 },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Em caso de sintomas como dificuldade para respirar, tosse persistente, irritação nos olhos ou na garganta, você precisa buscar atendimento médico imediatamente.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                    "Você deve estar atenta e tomar os cuidados necessários."
                 ],
                 proxima: 6,
                 }
