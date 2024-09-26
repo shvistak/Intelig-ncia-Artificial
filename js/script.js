@@ -43,8 +43,6 @@ function mostraAlternativas() {
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
-}
-
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
