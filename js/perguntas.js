@@ -57,7 +57,7 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "A poluição do ar é considerada uma das maiores ameaças à saúde humana causando diversos danos a saúde,?",
         alternativas: [
             {
                 texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
