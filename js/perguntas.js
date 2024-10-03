@@ -1,11 +1,11 @@
 export const perguntas = [
     {
-        enunciado: "Você recebeu orientações, visando a segurança e a saúde da população dos impactos da fumaça, evitando riscos de infecções respiratórias agudas. Qual o seu pensamento sobre isso?",
+        enunciado: "Você recebeu orientações, visando a segurança e a saúde da população sobre os impactos da fumaça, evitando riscos de infecções respiratórias. Qual o seu pensamento sobre isso?",
         alternativas: [
             {
                 texto: "Isso é preocupante!",
                 afirmacao: [
-                    "No início você ficou com medo e não sabia quais medidas tomar. "
+                    "No início ficou com medo e não sabia quais medidas tomar. "
                 ],
                 proxima: 1,
                 },
