@@ -22,52 +22,52 @@ export const perguntas = [
         enunciado: "Em caso de reação alérgica nos olhos ou narinas, a orientação é evitar contato com as áreas afetadas. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Você não deve coçar olhos e nariz, além de manter a distância das fumaças.",
+                texto: "Você se mantem  distante das fumaças.",
                 afirmacao: [
                     "É uma opção para se proteger."
                 ],
                 proxima: 3,
                 },
             {
-                texto: "A situação pode ser amenizada com lavagem nas regiões com soro fisiológico.",
+                texto: "Você vai nos lugares onde tem fumaça e nâo se protege.",
                 afirmacao: [
-                    "Você deve ficar alerta a sintomas."
+                    "Você nâo tem medo das consequências."
                 ],
                 proxima: 4,
                 }
         ]
     },
     {
-        enunciado: "Recomenda-se que você se proteja, principalmente nos dias em que o ar está mais afetado pela fumaça, evitando estar em ambientes externos, visando prevenir infecções respiratórias. O que você faz?",
+        enunciado: "Recomenda-se que você se proteja, principalmente nos dias em que o ar está mais afetado pela fumaça, evitando estar em ambientes externos, como fazer atividades físicas. O que você faz?",
         alternativas: [
             {
-                texto: "Evito exposição ao realizar atividades físicas em áreas externas.",
+                texto: "Você evita estar em exposição nas áreas externas.",
                 afirmacao: [
-                    "Você poderia optar em usar máscara de proteção respiratória quando houver circulação em ambientes com fumaça."
+                    "Tenho medo da fumaça causar complicações à saúde."
                 ],
                 proxima: 5,
                 },
             {
-                texto: "Em caso de sintomas como dificuldade para respirar, tosse persistente, irritação nos olhos ou na garganta, você precisa buscar atendimento médico imediatamente.",
+                texto: "O que importa para mim é fazer atividades físicas.",
                 afirmacao: [
-                    "Você deve estar atenta e tomar os cuidados necessários."
+                    "Não tenho medo do que a fumaça pode me causar."
                 ],
                 proxima: 6,
                 }
         ]
     },
     {
-        enunciado: "A poluição do ar é considerada uma das maiores ameaças à saúde humana causando diversos danos a saúde, como podemos mudar isso?",
+        enunciado: "A poluição do ar causada pelas fumaças é considerada uma das maiores ameaças à saúde humana causando diversos danos a saúde, como podemos mudar isso?",
         alternativas: [
             {
                 texto: "Não podemos fazer nada quanto a isso.",
                 afirmacao: [
-                    "Devemos alertar comunidades locais!"
+                    "Não é necessário educar a população sobre os riscos das queimadas!"
                 ],
                 proxima: 7,
                 },
             {
-                texto: "Parar com as queimadas.",
+                texto: "Promover técnicas como a rotação de culturas e a agrofloresta, que evitam a necessidade de queimar.",
                 afirmacao: [
                     "Os incêndios florestais são uma das principais fontes de poluição, liberando substâncias tóxicas que causam diversos problemas de saúde."
                 ],
@@ -76,7 +76,7 @@ export const perguntas = [
         ]
     },
     {
-        enunciado: "A fumaça também contém material particulado menor que 2,5 micrômetros (PM 2,5), que pode penetrar profundamente nos pulmões e entrar na corrente sanguínea, permanecendo no corpo por meses, e aumentando os riscos de inflamações e doenças respiratórias e cardiovasculares. Qual seu nível de preocupação?",
+        enunciado: "A fumaça também contém material particulado menor que 2,5 micrômetros (PM 2,5), que pode penetrar profundamente nos pulmões e entrar na corrente sanguínea, permanecendo no corpo por meses, aumentando os riscos de inflamações e doenças respiratórias e cardiovasculares. Qual seu nível de preocupação?",
         alternativas: [
             {
                 texto: "Nível baixo, pois isso não irá me afetar.",
