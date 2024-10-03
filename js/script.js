@@ -43,6 +43,13 @@ function mostraAlternativas() {
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
+    function mostraAfirmacoes (){
+        for(const afirmacoes of perguntaAtual.afirmacoes){
+            
+        }
+    }
+    }
+    
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
@@ -59,14 +66,14 @@ function mostraResultado() {
     caixaPerguntas.textContent = `Em 2049, ${nome}`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-    caixaResultado.classList.add("mostrar");
+    caixaResultados.classList.add("mostrar");
     botaoJogarNovamente.addEventListener("click", jogaNovamente);
 }
 
 function jogaNovamente() {
     atual = 0;
     historiaFinal = "";
-    caixaResultado.classList.remove("mostrar");
+    caixaResultados.classList.remove("mostrar");
     mostraPergunta();
 }
 
